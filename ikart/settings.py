@@ -149,9 +149,9 @@ MESSAGE_TAGS = {
 # Email Settings
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'elsonbaty.ma@gmail.com'
+EMAIL_HOST_USER = ''
 # EMAIL_HOST_PASSWORD = 'Google app password without spaces, it is under the security tab in your google account'
-EMAIL_HOST_PASSWORD = 'rlglpeyghpllkawe'
+EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = True
 
 
