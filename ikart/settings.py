@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-7a1ii$e#%f=*anaa*t^_br!e!p(5hy6j0%)@wz8pu5p=hhp*2!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -139,3 +139,22 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+from django.contrib.messages import constants as messages
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger',
+}
+
+# Email Settings
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'elsonbaty.ma@gmail.com'
+# EMAIL_HOST_PASSWORD = 'Google app password without spaces, it is under the security tab in your google account'
+EMAIL_HOST_PASSWORD = 'rlglpeyghpllkawe'
+EMAIL_USE_TLS = True
+
+
+
+# CSRF_TRUSTED_ORIGINS = ['https://79a8-94-202-39-206.ngrok-free.app']
+# BASE_URL = 'https://79a8-94-202-39-206.ngrok-free.app'
